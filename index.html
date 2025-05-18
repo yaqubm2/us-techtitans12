@@ -2,33 +2,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>US TechTitans - Home</title>
-    <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>US TechTitans - Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <img src="images/logo.png" alt="US TechTitans Logo" class="logo" />
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <h1>Building Digital Solutions</h1>
-            <p>We deliver high-quality digital services for businesses of all sizes.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 US TechTitans. All rights reserved.</p>
-    </footer>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-blue-900 text-white">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <div class="text-2xl font-bold">US TechTitans</div>
+      <nav class="space-x-4">
+        <a href="index.html" class="hover:text-gray-300">Home</a>
+        <a href="about.html" class="hover:text-gray-300">About</a>
+        <a href="services.html" class="hover:text-gray-300">Services</a>
+        <a href="portfolio.html" class="hover:text-gray-300">Portfolio</a>
+        <a href="blog.html" class="hover:text-gray-300">Blog</a>
+        <a href="contact.html" class="hover:text-gray-300">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-50 py-20">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h1 class="text-4xl font-extrabold text-blue-900">Digital Transformation Experts</h1>
+        <p class="mt-4 text-lg text-blue-800">We build scalable, reliable and innovative software solutions tailored for your business.</p>
+        <a href="contact.html" class="mt-6 inline-block bg-blue-900 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-800">Let's Talk</a>
+      </div>
+      <div>
+        <img src="https://undraw.co/api/illustrations/3b71ee9f-2380-48f2-a982-39a5f03c2349" alt="Hero illustration" class="w-full">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Preview -->
+  <section class="py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold text-blue-900">Who We Are</h2>
+      <p class="mt-4 text-gray-600">US TechTitans is a leading IT solutions provider delivering high-performance digital products and services. From startups to enterprises, we help our clients succeed in the digital age.</p>
+    </div>
+  </section>
+
+  <!-- Featured Services -->
+  <section class="bg-gray-50 py-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-blue-900 mb-12">Our Core Services</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow text-center">
+          <img src="https://img.icons8.com/clouds/100/code.png" class="mx-auto mb-4" alt="Software Dev">
+          <h3 class="text-xl font-semibold text-blue-800">Software Development</h3>
+          <p class="mt-2 text-gray-600">Custom applications to meet your business goals with modern architecture and robust backend systems.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow text-center">
+          <img src="https://img.icons8.com/clouds/100/commercial.png" class="mx-auto mb-4" alt="UI/UX Design">
+          <h3 class="text-xl font-semibold text-blue-800">UI/UX Design</h3>
+          <p class="mt-2 text-gray-600">Beautiful, user-centered designs that enhance usability, engagement, and brand identity.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow text-center">
+          <img src="https://img.icons8.com/clouds/100/smartphone.png" class="mx-auto mb-4" alt="Mobile Dev">
+          <h3 class="text-xl font-semibold text-blue-800">Mobile App Development</h3>
+          <p class="mt-2 text-gray-600">Cross-platform mobile solutions that work seamlessly across iOS and Android devices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="bg-blue-900 text-white py-16 text-center">
+    <h2 class="text-3xl font-bold">Let’s Build the Future of Technology Together</h2>
+    <a href="contact.html" class="mt-6 inline-block bg-white text-blue-900 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100">Get in Touch</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <p>&copy; 2025 US TechTitans. All rights reserved.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
